@@ -1,0 +1,9 @@
+To display an image, use the `background-image` property instead:
+
+```css
+.element {
+  background-image: url('valid-path.jpg');
+}
+```
+
+This correctly sets the image as the background.  Alternatively, for more control, you might consider using a `<img>` element.
