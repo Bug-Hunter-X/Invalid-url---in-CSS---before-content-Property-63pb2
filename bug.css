@@ -1,0 +1,9 @@
+The following CSS rule uses an invalid value for the `content` property in the `::before` pseudo-element:
+
+```css
+.element::before {
+  content: url(invalid-path.jpg);
+}
+```
+
+The `url()` function in the `content` property is only valid for referencing images within the `background-image` property, not the `content` property itself.  Attempting to use it will often result in no visible effect. To display an image, you'd typically use a background image on the element itself.
